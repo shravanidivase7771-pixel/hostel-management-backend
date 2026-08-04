@@ -1,0 +1,68 @@
+.allocation-container{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:25px;
+    padding:25px;
+}
+
+.allocation-form,
+.allocation-table{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.allocation-form form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.allocation-form select,
+.allocation-form button{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ddd;
+}
+
+.allocation-form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.allocation-form button:hover{
+    background:#1d4ed8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#2563eb;
+    color:white;
+}
+
+th,
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+    background:#f8fafc;
+}
+
+@media(max-width:900px){
+
+.allocation-container{
+grid-template-columns:1fr;
+}
+
+}

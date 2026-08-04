@@ -7,7 +7,9 @@ const connectDB = require("./config/db");
 const { initSocket } = require("./config/socket");
 const { errorHandler } = require("./middleware/errorMiddleware");
 
-dotenv.config();
+dotenv.config({ path: "./backend/.env" });
+console.log("Current Directory:", process.cwd());
+console.log("MONGO_URI =", process.env.MONGO_URI);
 
 connectDB();
 
